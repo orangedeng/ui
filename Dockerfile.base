@@ -1,4 +1,4 @@
-FROM node
+FROM node:8
 COPY build.sh /build.sh
 COPY ui.tgz /ui.tgz
 RUN mkdir /ui && chmod +x /build.sh
