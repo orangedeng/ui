@@ -1,0 +1,7 @@
+FROM node
+COPY build.sh /build.sh
+COPY ui.tgz /ui.tgz
+RUN mkdir /ui && chmod +x /build.sh
+VOLUME [ "/ui" ]
+
+CMD [ "/build.sh" ]
